@@ -12,10 +12,9 @@
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { 
       background: #fff; 
-      font-family: Arial, sans-serif;
-      padding-bottom: 70px; /* Space buat Social Bar ngambang */
+      font-family: Arial, sans-serif; 
+      padding-bottom: 60px;
     }
-    /* HEADER ATAS */
     .header {
       display: flex;
       justify-content: space-between;
@@ -50,7 +49,6 @@
       font-size: 14px;
       font-weight: 600;
     }
-    /* BAGIAN VIDEO */
     .container {
       padding: 16px;
       max-width: 500px;
@@ -60,19 +58,6 @@
       color: #007bff;
       font-size: 14px;
       margin-bottom: 8px;
-    }
-    /* TOMBOL DOWNLOAD UDAH DIKECILIN */
-    .btn-dl { 
-      display: block; 
-      background: #e50914; 
-      color: white; 
-      padding: 10px; /* Dikecilin dari 12px */
-      margin-bottom: 12px;
-      border-radius: 8px; 
-      text-decoration: none; 
-      font-weight: bold; 
-      text-align: center;
-      font-size: 15px; /* Dikecilin dari 16px */
     }
     .video-wrapper {
       position: relative;
@@ -84,7 +69,6 @@
       width: 100%;
       display: block;
     }
-    /* TOMBOL PLAY DITENGAH */
     .play-btn {
       position: absolute;
       top: 50%;
@@ -108,12 +92,22 @@
       border-bottom: 12px solid transparent;
       margin-left: 4px;
     }
+    .btn-dl { 
+      display: block; 
+      background: #e50914; 
+      color: white; 
+      padding: 14px; 
+      margin-top: 16px; 
+      border-radius: 8px; 
+      text-decoration: none; 
+      font-weight: bold; 
+      text-align: center;
+    }
     #histats_counter { display: none; }
   </style>
 </head>
 <body>
 
-  <!-- HEADER -->
   <div class="header">
     <div class="logo">
       <div class="logo-icon">V</div>
@@ -126,10 +120,6 @@
     
     <div class="ad-text">Advertise</div>
 
-    <!-- 2. TOMBOL DOWNLOAD UDAH DIKECILIN -->
-    <a href="https://www.profitablecpmratenetwork.com/dt9g7iyj?key=09db2575b225fb63777ffc04927c1dae" class="btn-dl" target="_blank">DOWNLOAD </a>
-
-    <!-- VIDEO + TOMBOL PLAY -->
     <div class="video-wrapper" onclick="document.getElementById('myVideo').play(); this.querySelector('.play-btn').style.display='none'">
       <video id="myVideo" poster="">
         <source src="https://cdn.jsdelivr.net/gh/Acengp/Bmg@main/video12.mp4" type="video/mp4">
@@ -138,13 +128,26 @@
       <div class="play-btn"></div>
     </div>
 
+    <!-- 2. DIRECT LINK DI TOMBOL DOWNLOAD -->
+    <a href="https://www.profitablecpmratenetwork.com/dt9g7iyj?key=09db2575b225fb63777ffc04927c1dae" class="btn-dl" target="_blank">DOWNLOAD VIDEO</a>
+
   </div>
 
   <script src="https://pl29169098.profitablecpmratenetwork.com/65/2d/4e/652d4ef4510d0b245a5d85b625a7bc08.js"></script>
 
+  <!-- Histats.com  (div with counter) --><div id="histats_counter"></div>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,5019413,4,9,110,60,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?5019413&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
 
-  
-  <!-- 4. HISTATS KAKAK PASANG SENDIRI DISINI -->
-  
 </body>
 </html>
